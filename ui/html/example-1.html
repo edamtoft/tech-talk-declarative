@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example 1 - Imperative Rendering</title>
+    <meta charset="utf-8" /> 
+  </head>
+  <body>
+    <canvas width="800" height="600" id="canvas"></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+      ctx.font = "bold 20px Arial";
+      ctx.fillText("Example 1 - Imperative Rendering", 5, 20);
+      ctx.moveTo(0, 30);
+      ctx.lineTo(800, 30);
+      ctx.stroke();
+      ctx.font = "normal 12px Arial";
+      let basis = 40;
+      ctx.beginPath();
+      ctx.arc(10, basis + 11, 2, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.fillText("Item 1", 30, basis + 16);
+      basis += 20;
+      ctx.beginPath();
+      ctx.arc(10, basis + 11, 2, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.fillText("Item 2", 30, basis + 16);
+      basis += 20;
+      ctx.beginPath();
+      ctx.arc(10, basis + 11, 2, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.fillText("Item 3", 30, basis + 16);
+    </script>
+  </body>
+</html>

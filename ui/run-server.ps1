@@ -1,0 +1,1 @@
+docker run -d -v "$PSScriptRoot/html:/usr/share/nginx/html:ro" -p 8080:80 nginx

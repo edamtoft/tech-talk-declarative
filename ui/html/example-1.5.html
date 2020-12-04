@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example 1.5 - DIY Declarative Rendering</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <canvas width="800" height="600" id="canvas"></canvas>
+    <script src="scripts/renderer.js"></script>
+    <script>
+      Renderer.fromSelector("#canvas").render([
+        { type: "header", text: "Example 1.5 - DIY Declarative Rendering"  },
+        { type: "break" },
+        { type: "item", text: "Item 1" },
+        { type: "item", text: "Item 2" },
+        { type: "item", text: "Item 3" },
+      ]);
+    </script>
+  </body>
+</html>
